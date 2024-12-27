@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Login</title>
+    <style>
+        /* إعدادات عامة للصفحة */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('log in.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        /* حاوية تسجيل الدخول */
+        .login-container {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            width: 350px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: #004861;
+        }
+
+        .input-box {
+            margin: 15px 0;
+            position: relative;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 12px 10px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.3);
+            color: #001082;
+            font-size: 16px;
+        }
+
+        .input-box input::placeholder {
+            color:dimgrey;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            background-color: #004861;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0e8eab;
+        }
+
+        .links {
+            margin-top: 15px;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: #004861;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .links a:hover {
+            color: #0e8eab;
+        }
+    </style>
+</head>
+<body>
+    <!-- حاوية تسجيل الدخول -->
+    <div class="login-container">
+        <h2>WellCare Hospital</h2>
+        <form action="#" method="POST">
+            <div class="input-box">
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-box">
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="links">
+                <a href="create account.html">Forgot Password?</a> |
+                <a href="create account.html">Create Account</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

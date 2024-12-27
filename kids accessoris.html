@@ -1,0 +1,296 @@
+ِ<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Well Care Pharmacy</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Well Care Logo" class="logo">
+            <h1>Well Care Pharmacy</h1>
+        </div>
+        <div class="header-buttons">
+            <input type="text" id="search" placeholder="Search for a product..." oninput="searchProducts()" class="search-input">
+            <button onclick="toggleMenu()" class="menu-button">
+                <img src="pngegg (2).png" alt="Menu Icon">
+            </button>
+        </div>
+    </header>
+    <main>
+        <div id="sidebar" class="sidebar">
+            <button onclick="closeMenu()" class="close-button">X</button>
+            <ul>
+                <li><a href="Home.2.html">Home</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+            </ul>
+            
+            <h2>Departments</h2>
+            <ul>
+       
+                <li><a href="Medications and treatments.html">Medications and treatments</a></li>
+
+                <li><a href="kids accessoris.html">kids accessoris </a></li>
+               
+                
+                <li><a href="COSMETICS.html">COSMETICS</a></li>
+                
+                
+            </ul>
+        </div>
+        <h3 id="KIDS ACCESSORIES">KIDS ACCESSORIES</h3> 
+            <div class="product-container">
+                <div class="product">
+                    <img src="a3.webp" alt="NACTALIA 2">
+                    <h3>NACTALIA 2</h3>
+                    <div class="rating">
+                        <span>product rating :</span>
+                        <div class="star-rating">
+                            <input type="radio" id="star1" name="rating1" value="5" />
+                            <label for="star1" class="star">★</label>
+                            <input type="radio" id="star2" name="rating1" value="4" />
+                            <label for="star2" class="star">★</label>
+                            <input type="radio" id="star3" name="rating1" value="3" />
+                            <label for="star3" class="star">★</label>
+                            <input type="radio" id="star4" name="rating1" value="2" />
+                            <label for="star4" class="star">★</label>
+                            <input type="radio" id="star5" name="rating1" value="1" />
+                            <label for="star5" class="star">★</label>
+                        </div>
+                    </div>
+                    <p>Price: 240 EGP</p>
+                    <button onclick="addToCart('NACTALIA 2', 240)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="a1.webp" alt="MOLFIX PANTS 3">
+                    <h3>MOLFIX PANTS 3</h3>
+                    <div class="rating">
+                        <span>product rating :</span>
+                        <div class="star-rating">
+                            <input type="radio" id="star1" name="rating1" value="5" />
+                            <label for="star1" class="star">★</label>
+                            <input type="radio" id="star2" name="rating1" value="4" />
+                            <label for="star2" class="star">★</label>
+                            <input type="radio" id="star3" name="rating1" value="3" />
+                            <label for="star3" class="star">★</label>
+                            <input type="radio" id="star4" name="rating1" value="2" />
+                            <label for="star4" class="star">★</label>
+                            <input type="radio" id="star5" name="rating1" value="1" />
+                            <label for="star5" class="star">★</label>
+                        </div>
+                    </div>
+                    <p>Price: 299 EGP</p>
+                    <button onclick="addToCart('MOLFIX PANTS 3', 299)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="a2.webp" alt="SUPER KIDS 3IN1">
+                    <h3>SUPER KIDS 3IN1</h3>
+                    <div class="rating">
+                        <span>product rating :</span>
+                        <div class="star-rating">
+                            <input type="radio" id="star1" name="rating1" value="5" />
+                            <label for="star1" class="star">★</label>
+                            <input type="radio" id="star2" name="rating1" value="4" />
+                            <label for="star2" class="star">★</label>
+                            <input type="radio" id="star3" name="rating1" value="3" />
+                            <label for="star3" class="star">★</label>
+                            <input type="radio" id="star4" name="rating1" value="2" />
+                            <label for="star4" class="star">★</label>
+                            <input type="radio" id="star5" name="rating1" value="1" />
+                            <label for="star5" class="star">★</label>
+                        </div>
+                    </div>
+                    <p>Price: 190 EGP</p>
+                    <button onclick="addToCart('SUPER KIDS 3IN1', 190)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="a4.webp" alt="INNOGEN SHAMPOO">
+                    <h3>INNOGEN SHAMPOO</h3>
+                    <div class="rating">
+                        <span>product rating :</span>
+                        <div class="star-rating">
+                            <input type="radio" id="star1" name="rating1" value="5" />
+                            <label for="star1" class="star">★</label>
+                            <input type="radio" id="star2" name="rating1" value="4" />
+                            <label for="star2" class="star">★</label>
+                            <input type="radio" id="star3" name="rating1" value="3" />
+                            <label for="star3" class="star">★</label>
+                            <input type="radio" id="star4" name="rating1" value="2" />
+                            <label for="star4" class="star">★</label>
+                            <input type="radio" id="star5" name="rating1" value="1" />
+                            <label for="star5" class="star">★</label>
+                        </div>
+                    </div>
+                    <p>Price: 100 EGP</p>
+                    <button onclick="addToCart('INNOGEN SHAMPOO', 100)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="a5.webp" alt="JOHNSON SHAMPOO">
+                    <h3>JOHNSON SHAMPOO</h3>
+                    <div class="rating">
+                        <span>product rating :</span>
+                        <div class="star-rating">
+                            <input type="radio" id="star1" name="rating1" value="5" />
+                            <label for="star1" class="star">★</label>
+                            <input type="radio" id="star2" name="rating1" value="4" />
+                            <label for="star2" class="star">★</label>
+                            <input type="radio" id="star3" name="rating1" value="3" />
+                            <label for="star3" class="star">★</label>
+                            <input type="radio" id="star4" name="rating1" value="2" />
+                            <label for="star4" class="star">★</label>
+                            <input type="radio" id="star5" name="rating1" value="1" />
+                            <label for="star5" class="star">★</label>
+                        </div>
+                    </div>
+                    <p>Price: 170 EGP</p>
+                    <button onclick="addToCart('JOHNSON SHAMPOO', 170)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="a6.webp" alt="SUPER KIDS">
+                    <h3>SUPER KIDS</h3>
+                    <div class="rating">
+                        <span>product rating :</span>
+                        <div class="star-rating">
+                            <input type="radio" id="star1" name="rating1" value="5" />
+                            <label for="star1" class="star">★</label>
+                            <input type="radio" id="star2" name="rating1" value="4" />
+                            <label for="star2" class="star">★</label>
+                            <input type="radio" id="star3" name="rating1" value="3" />
+                            <label for="star3" class="star">★</label>
+                            <input type="radio" id="star4" name="rating1" value="2" />
+                            <label for="star4" class="star">★</label>
+                            <input type="radio" id="star5" name="rating1" value="1" />
+                            <label for="star5" class="star">★</label>
+                        </div>
+                    </div>
+                    <p>Price: 330 EGP</p>
+                    <button onclick="addToCart('SUPER KIDS', 330)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="c7.webp" alt="SUPER KIDS ROLL-ON">
+                    <h3>SUPER KIDS ROLL-ON</h3>
+                    <div class="rating">
+                        <span>product rating :</span>
+                        <div class="star-rating">
+                            <input type="radio" id="star1" name="rating1" value="5" />
+                            <label for="star1" class="star">★</label>
+                            <input type="radio" id="star2" name="rating1" value="4" />
+                            <label for="star2" class="star">★</label>
+                            <input type="radio" id="star3" name="rating1" value="3" />
+                            <label for="star3" class="star">★</label>
+                            <input type="radio" id="star4" name="rating1" value="2" />
+                            <label for="star4" class="star">★</label>
+                            <input type="radio" id="star5" name="rating1" value="1" />
+                            <label for="star5" class="star">★</label>
+                        </div>
+                    </div>
+                    <p>Price: 130 EGP</p>
+                    <button onclick="addToCart('SUPER KIDS ROLL-ON', 130)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="c8.webp" alt="SUPER KIDS WET WIPES">
+                    <h3>SUPER KIDS WET WIPES</h3>
+                    <div class="rating">
+                        <span>product rating :</span>
+                        <div class="star-rating">
+                            <input type="radio" id="star1" name="rating1" value="5" />
+                            <label for="star1" class="star">★</label>
+                            <input type="radio" id="star2" name="rating1" value="4" />
+                            <label for="star2" class="star">★</label>
+                            <input type="radio" id="star3" name="rating1" value="3" />
+                            <label for="star3" class="star">★</label>
+                            <input type="radio" id="star4" name="rating1" value="2" />
+                            <label for="star4" class="star">★</label>
+                            <input type="radio" id="star5" name="rating1" value="1" />
+                            <label for="star5" class="star">★</label>
+                        </div>
+                    </div>
+                    <p>Price: 180 EGP</p>
+                    <button onclick="addToCart('SUPER KIDS WET WIPES', 180)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="c9.webp" alt="HUGGIES LITTLE SWIMMER L DIAPERS">
+                    <h3>HUGGIES LITTLE SWIMMER L DIAPERS</h3>
+                    <div class="rating">
+                        <span>product rating :</span>
+                        <div class="star-rating">
+                            <input type="radio" id="star1" name="rating1" value="5" />
+                            <label for="star1" class="star">★</label>
+                            <input type="radio" id="star2" name="rating1" value="4" />
+                            <label for="star2" class="star">★</label>
+                            <input type="radio" id="star3" name="rating1" value="3" />
+                            <label for="star3" class="star">★</label>
+                            <input type="radio" id="star4" name="rating1" value="2" />
+                            <label for="star4" class="star">★</label>
+                            <input type="radio" id="star5" name="rating1" value="1" />
+                            <label for="star5" class="star">★</label>
+                        </div>
+                    </div>
+                    <p>Price: 670 EGP</p>
+                    <button onclick="addToCart('HUGGIES LITTLE SWIMMER L DIAPERS', 670)">Add to Cart</button>
+                </div>
+               
+
+
+
+
+
+
+
+
+
+                <!-- أضف المزيد من منتجات babycare هنا -->
+            </div>
+        
+
+        
+
+        
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h2>Our Services</h2>
+                <p><a href="#">Health Tips</a></p>
+                <p><a href="#">Home Delivery</a></p>
+                <p><a href="#">Basic Medical Checkups</a></p>
+                <p><a href="#">Natural and Health Products</a></p>
+            </div>
+    
+            <div class="footer-section">
+                <h2>Our Departments</h2>
+                <p>General Diseases</p>
+                <p>Cardiology</p>
+                <p>Neurology</p>
+                <p>Dermatology</p>
+                <p>Pediatrics</p>
+                <p>Orthopedics</p>
+            </div>
+    
+            <div class="footer-section">
+                <h2>Contact</h2>
+                <p><i class="fa-solid fa-phone"></i> +917817738027</p>
+                <p><i class="fa-solid fa-envelope"></i> wellcare@gmail.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> WellCare Hospital <br>123 Healing Avenue, <br>Green Valley, CityVILLE</p>
+            </div>
+        </div>
+    
+        <hr />
+        <p>&copy; 2024 WellCare Hospital. All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

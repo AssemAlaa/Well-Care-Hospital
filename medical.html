@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/5479da0db5.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+  }
+  
+  .hero-section {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: url('doc.jpg') no-repeat center center/cover;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('medical.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+
+  
+  .overlay h1 {
+    color:#001082;
+    font-size: 2rem;
+    text-align: center;
+    }
+    body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8fbff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            color: #194185;
+            margin: 0;
+            
+        }
+
+        .details {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            border: 1px solid #d4e9ff;
+            padding: 50px;
+            border-radius: 8px;
+            background-color: #f0f8ff;
+        }
+
+        .details div {
+            flex: 1;
+            margin-right: 15px;
+        }
+
+        .details div:last-child {
+            margin-right: 0;
+        }
+
+        .details input {
+            width: 100%;
+            padding: 4px;
+            border: 2px solid #c1dbf7;
+            border-radius: 20px;
+            outline: none;
+            background-color: #fff;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .sidebar {
+            flex: 1;
+            max-width: 200px;
+            margin-right: 20px;
+        }
+
+        .sidebar button {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 10px;
+            background-color: #f0f8ff;
+            border: none;
+            border-radius: 6px;
+            color: #194185;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        .sidebar button:hover {
+            background-color: #d4e9ff;
+        }
+
+        .main-content {
+            flex: 3;
+        }
+
+        .appointment {
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f0f8ff;
+            border: 1px solid #c1dbf7;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .appointment span {
+            flex: 1;
+            text-align: center;
+            color: #194185;
+        }
+
+        .appointment span:first-child {
+            text-align: left;
+        }
+
+        .appointment span:last-child {
+            text-align: right;
+        }
+
+        .appointment button {
+            padding: 8px 12px;
+            border: 1px solid #d4e9ff;
+            border-radius: 6px;
+            cursor: pointer;
+            color: #194185;
+            background-color: #f0f8ff;
+            font-weight: bold;
+        }
+
+        .appointment button:hover {
+            background-color: #d4e9ff;
+        }
+        .xx {
+    background-color: white;
+    color: #001082;
+    font-family: sans-serif;
+    font-size: 40px;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    line-height: 1px; 
+  } 
+  .xx .x {
+    padding-left: 70px;
+    letter-spacing: 12px;
+    font-family: c;
+  }
+  .xx img {
+    width: 90px;
+    vertical-align: middle;
+  }
+  .xx .follow i{
+    padding-left: 10px;
+    padding-top: 20px;
+  }
+  .follow{
+    font-size: 30px;
+    padding-left: 1100px;
+  }
+  .footer_content a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    margin: 15px;
+  }
+  .footer_content a:hover{
+  color:#25ced1;
+}
+.footer_content h2{
+    color: #001082;
+    font-size: 22px;
+    margin: 15px;
+  }
+  .footer_content p{
+    color: black;
+    font-size: 15px;
+    margin: 15px;
+  }
+  .footer .footer_content{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .z p{
+    color: black;
+    text-align: center;
+    padding: 15px;
+    font-size: 15px;
+  }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <div class="overlay">
+          <h1>Your Medical Records at Your Fingertips</h1>
+        </div>
+      </div>
+                <div class="container">
+                    <div class="header">
+                        <h1>Patient Details</h1>
+                    </div>
+                    <div class="details">
+                        <div><input type="text" placeholder="Patient Name"></div>
+                        <div><input type="text" placeholder="Age"></div>
+                        <div><input type="text" placeholder="Patient ID"></div>
+                        <div><input type="text" placeholder="Phone Number"></div>
+                    </div>
+                    <div class="content">
+                        <div class="sidebar">
+                            <button>Appointments</button>
+                            <button>Prescriptions</button>
+                            <button>Test Results</button>
+                            <button>Visit Summary</button>
+                        </div>
+                        <div class="main-content">
+                            <div class="appointment">
+                                <span>Appointment 1</span>
+                                <span>18/12/2024</span>
+                                <span>14:15</span>
+                                <button>View</button>
+                                <button>Edit</button>
+                                <button>Delete</button>
+                                
+                            </div>
+                            <div class="main-content">
+                                <div class="appointment">
+                                    <span>Appointment 2</span>
+                                    <span>8/12/2024</span>
+                                    <span>16:15</span>
+                                    <button>View</button>
+                                    <button>Edit</button>
+                                    <button>Delete</button>
+                                </div>
+                                <div class="main-content">
+                                    <div class="appointment">
+                                        <span>Appointment 1</span>
+                                        <span>25/1/2024</span>
+                                        <span>11:15</span>
+                                        <button>View</button>
+                                        <button>Edit</button>
+                                        <button>Delete</button>
+                                        
+                                    </div>
+                            
+                        </div>
+                    </div>
+                </div>
+             </div>
+                </div>
+                <footer>
+                    <hr/>
+                </footer>
+                <div class="xx">
+                    <div class="xxx">
+                      <img src="logo.png" alt="" />
+                    WellCare
+                    <div class="x">Hospital</div>
+                    <div class="follow">
+                        <p>Follow Us</p> 
+                        <i class="fa-brands fa-whatsapp" style="color: green;"></i>
+                        <i class="fa-brands fa-square-x-twitter" style="color: black;"></i>
+                        <i class="fa-brands fa-facebook" style="color: #2731c4;"></i>
+                        <i class="fa-brands fa-linkedin" style="color: #1c5f92;"></i>
+                    </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer">
+                    <div class="footer_content">
+                      <div>
+                        <h2>Quick Links</h2>
+                        <p><a href="home.html">Home</a></p>
+                        <p><a href="about us.html">About Us</a></p>
+                        <p><a href="help.html">Help</a></p>
+                        <p><a href="contact us.html">Contact Us</a></p>
+                        <p><a href="login.html">Login</a></p>
+                        <p><a href="setting.html">Settings</a></p>
+                      </div>
+              
+                      <div>
+                        <h2>Our Services</h2>
+                        <p><a href="">Book Appointment</a></p>
+                        <p><a href="">Health Screening</a></p>
+                        <p><a href="">Find Doctor</a></p>
+                        <p><a href="">Patient Checkin</a></p>
+                        <p><a href="">Medical Records</a></p>
+                      </div>
+              
+                      <div>
+                        <h2>Our Departments</h2>
+                        <p>General Diseases</p>
+                        <p>Cardiology</p>
+                        <p>Neurology</p>
+                        <p>Dermatology</p>
+                        <p>Pediatrics</p>
+                        <p>Orthopedics</p>
+                      </div>
+                      <div>
+                        <h2>Contact</h2>
+                        <p><i class="fa-solid fa-phone fa-beat-fade"></i> +917817738027</p>
+                        <p><i class="fa-solid fa-envelope fa-beat-fade"></i> wellcare@gmail.com</p>
+                        <p><i class="fa-solid fa-location-dot fa-beat-fade"></i> WellCare Hospital <br>123 Healling Avenue, <br>Green Valley,CityVILLE</p>
+                      </div>
+              
+                    </div>
+                  </div>
+              
+                  <footer class="z">
+                    <hr/>
+                    <p>@2024 WellCare Hospital. All Rights Reserved</p>
+                  </footer>
+
+    
+</body>
+</html>

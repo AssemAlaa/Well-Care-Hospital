@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Page - Wellcare Hospital</title>
+    <link rel="stylesheet" href="hos.css">
+    <style>
+        
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-image: url('help.jpg');
+            background-size: cover;
+             color: #343a40;
+}
+        header {
+            /* background: linear-gradient(90deg, #007bff, #001082); */
+            background-color: #25ced1;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        nav {
+            background: #343a40;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+        .section {
+            margin-bottom: 50px;
+        }
+        .section h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #007bff;
+            border-left: 5px solid #0056b3;
+            padding-left: 15px;
+        }
+        .faq {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .faq-item {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .faq-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        .faq-item h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #0056b3;
+        }
+        .contact-info, .resources {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .contact-card, .resource-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33% - 20px);
+            box-sizing: border-box;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .contact-card:hover, .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        .help-box {
+            background: white;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+.help-box form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .help-box label {
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .help-box input, .help-box textarea {
+            padding: 8px;
+            border: 1px solid #ced4da;
+            border-radius: 10px;
+            font-size: 14px;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: border-color 0.3s }
+        .help-box input:focus, .help-box textarea:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+        .help-box button {
+            padding: 8px 15px;
+            background: linear-gradient(90deg, #007bff, #0056b3);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 14px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s, transform 0.2s;
+        }
+        .help-box button:hover {
+background: linear-gradient(90deg, #0056b3, #003f88);
+            transform: translateY(-3px);
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(90deg, #343a40, #212529);
+            color: white;
+            position: relative;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer a {
+            color: #ffc107;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('ziy7ad.jpg')no-repeat center center fixed;
+    background-size: cover;
+    
+    color: #343a40;
+}
+    </style>
+</head>
+<body>
+    </style>
+    
+    <header>
+        <h1>Help Center</h1>
+    </header>
+    <nav>
+        <a href="#contact">Contact Information</a>
+        <a href="#faq">Frequently Asked Questions</a>
+        <a href="#resources">Additional Resources</a>
+        <a href="#assistance">Need Assistance?</a>
+    </nav>
+<div class="container">
+        <div class="section" id="contact">
+            <h2>Contact Information</h2>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3>Phone</h3>
+                    <p>+917817738027</p>
+                </div>
+                <div class="contact-card">
+                    <h3>Email</h3>
+                    <p>wellcare@gmail.com</p>
+                </div>
+                <div class="contact-card">
+                    <h3>Address</h3>
+                    <p>123 Healing Avenue, Green Valley, Cityville</p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq">
+                <div class="faq-item">
+                    <h3>How can I book an appointment?</h3>
+                    <p>You can book an appointment by calling our helpline or through our website.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What services do you offer?</h3>
+                    <p>We offer a wide range of medical services including diagnostics, treatments, and surgical procedures.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Are your services covered by insurance?</h3>
+                    <p>Yes, we work with most major insurance providers. Please contact us for details.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="resources">
+            <h2>Additional Resources</h2>
+            <div class="resources">
+                <div class="resource-card">
+                    <h3>Health Tips</h3>
+                    <p>Explore our blog for tips on staying healthy and managing chronic conditions.</p>
+                </div>
+<div class="resource-card">
+                    <h3>Download Forms</h3>
+                    <p>Access patient registration forms, insurance forms, and more.</p>
+                </div>
+                <div class="resource-card">
+                    <h3>Emergency Services</h3>
+                    <p>Learn about our 24/7 emergency care and critical care services.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="assistance">
+            <h2>Need Assistance?</h2>
+            <div class="help-box">
+                <h3>Submit Your Details</h3>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <label for="issue">Describe Your Issue</label>
+                    <textarea id="issue" name="issue" placeholder="Explain your problem here..." rows="4" required></textarea>
+                    <button type="submit">Submit</button>
+</form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Wellcare Hospital. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('log\ in.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #2d3436;
+  }
+  
+  .container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Form Box */
+  .form-box {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+  }
+  
+  .form-box h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #0984e3;
+  }
+  
+  /* Input Fields */
+  .form-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #dcdde1;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Button */
+  .form-box button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #0984e3;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .form-box button:hover {
+    background-color: #74b9ff;
+  }

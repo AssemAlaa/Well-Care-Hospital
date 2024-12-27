@@ -1,0 +1,123 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: white;
+    color: #001082;
+    font-family: sans-serif;
+    font-size: 40px;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    line-height: 1px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+  }
+  nav .x {
+    padding-left: 70px;
+    letter-spacing: 12px;
+    font-family: c;
+  }
+  nav img {
+    width: 90px;
+    vertical-align: middle;
+  }
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7fb;
+    color: #333;
+    background-image: url('about.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+   
+}
+
+/* About section container */
+.about {
+    max-width: 1200px;
+    margin: 124px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background:rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);-webkit-backdrop-filter: blur(12px);
+    background-attachment: fixed;
+}
+
+/* Header of the about section */
+.about-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.about-header p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-top: 10px;
+}
+
+/* Main body of the about page */
+.about-body {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Text section */
+.about-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-text h2 {
+    font-size: 1.8rem;
+    color: #2980b9;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* Image section */
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .about-body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .about-image {
+        margin-top: 20px;
+    }
+}

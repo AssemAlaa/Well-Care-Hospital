@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Settings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('setting.jpg'); /* Replace 'your-image.jpg' with the path to your image */
+            background-size: cover;
+            background-position: center;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        h2 {
+            background-color: #e7f3ff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .settings-menu {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .menu-item {
+            text-align: center;
+            width: 120px;
+            cursor: pointer;
+        }
+
+        .menu-item i {
+            font-size: 2rem;
+            color: #007BFF;
+            margin-bottom: 10px;
+        }
+
+        .menu-item span {
+            display: block;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .section {
+            display: none;
+            margin-bottom: 30px;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        label {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .history {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 4px;
+            background: #f9f9f9;
+            margin-bottom: 15px;
+        }
+
+        .history h3 {
+            margin: 0 0 10px;
+            font-size: 1rem;
+        }
+
+        .history p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <div class="container">
+        <h1>Account Settings</h1>
+
+        <!-- Settings Menu -->
+        <div class="settings-menu">
+            <div class="menu-item" onclick="showSection('personal-info')">
+                <i class="fas fa-user"></i>
+                <span>Personal Info</span>
+            </div>
+            <div class="menu-item" onclick="showSection('history')">
+                <i class="fas fa-history"></i>
+                <span>History</span>
+            </div>
+            <div class="menu-item" onclick="showSection('language-settings')">
+                <i class="fas fa-language"></i>
+                <span>Language</span>
+            </div>
+        </div><!-- Personal Information Section -->
+        <div class="section" id="personal-info">
+            <h2>Personal Information</h2>
+            <label for="email">Change Email:</label>
+            <input type="email" id="email" placeholder="Enter your new email">
+
+            <label for="phone">Change Phone Number:</label>
+            <input type="tel" id="phone" placeholder="Enter your new phone number">
+
+            <label for="current-password">Change Password:</label>
+            <input type="password" id="current-password" placeholder="Current password">
+
+            <label for="new-password">New Password:</label>
+            <input type="password" id="new-password" placeholder="New password">
+
+            <label for="confirm-password">Confirm New Password:</label>
+            <input type="password" id="confirm-password" placeholder="Confirm new password">
+
+            <button>Update Personal Information</button>
+        </div>
+
+        <!-- History Section -->
+        <div class="section" id="history">
+            <h2>History</h2>
+            <h3>Purchase History</h3>
+            <div class="history">
+                <h3>Order #12345</h3>
+                <p>Product: Wireless Headphones</p>
+                <p>Date: 2024-01-15</p>
+            </div>
+            <div class="history">
+                <h3>Order #67890</h3>
+                <p>Product: Smartwatch</p>
+                <p>Date: 2024-01-10</p>
+            </div>
+
+            <h3>Reservation History</h3>
+            <div class="history">
+                <h3>Reservation #54321</h3>
+                <p>Hotel: Ocean View Resort</p>
+                <p>Date: 2023-12-20</p>
+            </div>
+            <div class="history">
+                <h3>Reservation #98765</h3>
+                <p>Hotel: City Central Inn</p>
+                <p>Date: 2023-11-15</p>
+            </div>
+        </div>
+
+        <!-- Language Settings Section -->
+        <div class="section" id="language-settings">
+            <h2>Language Settings</h2>
+            <label for="language">Preferred Language:</label>
+            <select id="language">
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+            </select>
+            <button>Update Language</button>
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.remove('active'));
+
+            const selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>

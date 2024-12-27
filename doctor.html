@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/5479da0db5.js" crossorigin="anonymous"></script>
+    
+    
+
+    <style>
+      nav {
+        background-color: white;
+        color: #001082;
+        font-family: sans-serif;
+        font-size: 40px;
+        padding-left: 50px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        line-height: 1px;
+        position: fixed;
+        width: 100%;
+        top: 0px;
+      }
+      nav .x {
+        padding-left: 70px;
+        letter-spacing: 12px;
+        font-family: c;
+      }
+      nav img {
+        width: 90px;
+        vertical-align: middle;
+      }
+      body {
+        margin: 0px;
+      }
+
+      main .x h1{
+        background-image: url('image.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #001082;
+        padding: 300px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 60px;
+        text-align:center;
+        font
+        
+      }
+
+      .form select{
+        border-radius:20px;
+        padding:5px 40px 5px 5px;
+        border-color: #25ced1;
+        border-width:3px;
+        color: black;
+        font-weight: bold;
+      
+      }
+
+      .parent{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+      }
+
+      .searches input{
+        border-radius: 20px;
+        padding: 5px 40px 5px 5px;
+        border-color: #25ced1;
+        border-width: 3px;
+        color: black;
+        font-weight: bold;
+        margin-left: 12px;
+        position: relative;
+        outline: none;
+        
+      }
+
+      .box button{
+        border: none;
+        all: unset;
+        position: absolute;
+        cursor: pointer;
+        right: 36.6rem;
+        top: 47.2rem;
+      }
+
+      .search input{
+        background-color: #25ced1;
+        color: white;
+        border-radius: 20px;
+        margin-left: 20px;
+        padding: 6.3px 10px;
+        border-color:#25ced1;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      /* article{
+        display: inline-block;
+      } */
+
+      
+
+      .doctor .textinarticle{
+        background-image: url('doctor2.jpg');
+        border-radius: 20px;
+        padding: 110px;
+        width: 9%;
+        height: 29px;
+        margin-left: 100px ;
+        margin-top: 50px;
+        display: inline-block;
+
+      }
+
+      .doctor .textinarticle .text{
+        color: black;
+        font-weight: bold;
+        padding-top: 10px;
+        padding-left: 49px;
+
+      }
+
+      .doctor  .textinarticle .view input{
+        border-radius: 20px;
+        color: #25ced1;
+        border-color: #25ced1;
+        padding: 5px 100px 5px 10px;
+      }
+
+      .doctor .textinarticle .book input{
+        border-radius: 20px;
+        color: white;
+        background-color: #25ced1;
+        padding: 5px 35px 5px 10px;
+        margin-top: 5px;
+
+
+      }
+      .doctor2 .text2{
+        background-image: url('doctor3.jpg');
+        border-radius: 20px;
+        padding: 110px;
+        width: 9%;
+        height: 29px;
+        margin-left: 100px ;
+        margin-top: 50px;
+        display: inline-block;
+      }
+      /* .doctor2 .textinarticle2 .text2{
+        color: black;
+        font-weight: bold;
+        padding-top: 10px;
+        padding-left: 49px;
+      } */
+
+
+
+
+
+
+      /* .space{
+        color: #25ced1;
+
+      } */
+
+
+      .xx {
+        background-color: white;
+        color: #001082;
+        font-family: sans-serif;
+        font-size: 40px;
+        padding-left: 50px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        line-height: 1px; 
+      } 
+
+      .xx .x {
+        padding-left: 70px;
+        letter-spacing: 12px;
+        font-family: c;
+      }
+      .xx img {
+        width: 90px;
+        vertical-align: middle;
+      }
+
+      .xx .follow i{
+        padding-left: 10px;
+      }
+      .follow{
+        font-size: 30px;
+        padding-left: 1100px;
+      }
+      .footer_content a{
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+        margin: 15px;
+      }
+
+    .footer_content a:hover{
+      color:#25ced1;
+    }
+      .footer_content h2{
+        color: #001082;
+        font-size: 22px;
+        margin: 15px;
+      }
+
+      .footer_content p{
+        color: black;
+        font-size: 15px;
+        margin: 15px;
+      }
+      .footer .footer_content{
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      .z p{
+        color: black;
+        text-align: center;
+        padding: 15px;
+        font-size: 15px;
+      }
+
+      /* @media(max-width:730px){
+        body{
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+        }
+      } */
+
+      
+
+
+      
+
+      
+
+      
+
+      
+    </style>
+  </head>
+  <body>
+    <nav>
+      <img src="logo.png" alt="" />
+      WellCare
+      <div class="x">Hospital</div>
+    </nav>
+
+    <main>
+        <div class="x">
+            <h1>Find Your Specialist Today</h1>
+        </div>
+    </main>
+
+    <div class="parent">
+        <form class="form">
+            <select name="">
+              <option value="Specialty/Department" disabled selected>
+                Specialty/Department
+              </option>
+              <option value="Pediatrics">Pediatrics</option>
+              طب ااطفال
+              <option value="Neurology">Neurology</option>
+              طب الاعصاب
+              <option value="Cardiology">Cardiology</option>
+              امراض القلب
+              <option value="Orthopedics">Orthopedics</option>
+              جراحه العظام
+              <option value="Dermatology">Dermatology</option>
+              امراض الجلد
+              <option value="Audiology">Audiology</option>
+              امراض سمعيه
+              <option value="Gastroenterology">Gastroenterology</option>
+              امراض جهاز هضمي
+              <option value="Dentist">Dentist</option>
+              <option value="Allergology">Allergology</option>
+              امراض حساسيه
+              <option value="Gynecology">Gynecology</option>
+              امراض نساء
+              <option value="Endocrinology">Endocrinology</option>
+              امراض غدد صماء
+              <option value="Rheumatology">Rheumatology</option>
+              امراض روماتيزم
+              <option value="Surgeon">Surgeon</option>
+              جراحه
+              <option value="Urology">Urology</option>
+              امراض مسالك بوليه
+              <option value="Immunology">Immunology</option>
+              امراض مناعه
+              <option value="Neonatology">Neonatology</option>
+              حديثي الولاده
+              <option value="Internists">Internists</option>
+              باطنه
+            </select>
+        </form>
+        <div class="searches">
+          <div class="box">
+            <input type="text" placeholder="Search by doctors name">
+            <button> <i class="fas fa-search"></i></button>
+          </div>
+        </div>
+
+        <div class="search">
+          <input type="submit" value="search">
+        </div>
+    </div>
+
+    <section>
+      <article class="doctor">
+        <div class="textinarticle">
+          <div class="text">
+            Dr. Rafeeq <br> Pediatrics
+          </div>
+            <div class="view">
+              <br> <input type="submit" value="View More">
+            </div>
+            <div class="book">
+              <input type="submit" value="Book an Appointment">
+            </div>
+        </div>
+      </article>
+      <article class="doctor2">
+        <div class="textinarticle2">
+          <div class="text2">
+            Dr. Rafeeq <br> Pediatrics
+          </div>
+            <div class="view2">
+              <br> <input type="submit" value="View More">
+            </div>
+            <div class="book2">
+              <input type="submit" value="Book an Appointment">
+            </div>
+        </div>
+      </article>
+
+
+    </section>
+
+    
+
+
+    <footer>
+      <hr/>
+    </footer>
+    <div class="xx">
+      <div class="xxx">
+        <img src="logo.png" alt="" />
+      WellCare
+      <div class="x">Hospital</div>
+      <div class="follow">
+        <p>Follow Us</p> 
+        <i class="fa-brands fa-whatsapp" style="color: green;"></i>  
+        <i class="fa-brands fa-square-x-twitter" style="color: black;"></i>
+        <i class="fa-brands fa-facebook" style="color: #2731c4;"></i>
+        <i class="fa-brands fa-linkedin" style="color: #1c5f92;"></i>
+      </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer_content">
+        <div>
+          <h2>Quick Links</h2>
+          <p><a href="">Home</a></p>
+          <p><a href="">About Us</a></p>
+          <p><a href="">Help</a></p>
+          <p><a href="">Contact Us</a></p>
+          <p><a href="">Login</a></p>
+          <p><a href="">Settings</a></p>
+        </div>
+
+        <div>
+          <h2>Our Services</h2>
+          <p><a href="">Book Appointment</a></p>
+          <p><a href="">Health Screening</a></p>
+          <p><a href="">Find Doctor</a></p>
+          <p><a href="">Patient Checkin</a></p>
+          <p><a href="">Medical Records</a></p>
+        </div>
+
+        <div>
+          <h2>Our Departments</h2>
+          <p>General Diseases</p>
+          <p>Cardiology</p>
+          <p>Neurology</p>
+          <p>Dermatology</p>
+          <p>Pediatrics</p>
+          <p>Orthopedics</p>
+        </div>
+        <div>
+          <h2>Contact</h2>
+          <p><i class="fa-solid fa-phone fa-beat-fade"></i> +917817738027</p>
+          <p><i class="fa-solid fa-envelope fa-beat-fade"></i> wellcare@gmail.com</p>
+          <p><i class="fa-solid fa-location-dot fa-beat-fade"></i> WellCare Hospital <br>123 Healling Avenue, <br>Green Valley,CityVILLE</p>
+        </div>
+
+      </div>
+    </div>
+
+    <footer class="z">
+      <hr/>
+      <p>@2024 WellCare Hospital. All Rights Reserved</p>
+    </footer>
+
+    
+
+    
+  </body>
+
+
+
+</html>
